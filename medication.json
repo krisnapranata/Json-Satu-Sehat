@@ -1,0 +1,48 @@
+{
+  "resourceType": "Medication",
+  "meta": {
+    "profile": [
+      "https://fhir.kemkes.go.id/r4/StructureDefinition/Medication"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://sys-ids.kemkes.go.id/medication/100028172",
+      "use": "official",
+      "value": "DEMACOLIN"
+    }
+  ],
+  "status": "active",
+  "code": {
+    "coding": [
+      {
+        "system": "http://sys-ids.kemkes.go.id/kfa",
+        "code": "93001019",
+        "display": "Demacolin tablet"
+      }
+    ]
+  },
+  "form": {
+    "coding": [
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/medication-form",
+        "code": "BS023",
+        "display": "Tablet"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/MedicationType",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://terminology.kemkes.go.id/CodeSystem/medication-type",
+            "code": "NC",
+            "display": "Non-compound"
+          }
+        ]
+      }
+    }
+  ]
+}

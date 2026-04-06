@@ -1,0 +1,53 @@
+{
+  "resourceType": "AllergyIntolerance",
+  "identifier": [
+    {
+      "system": "http://sys-ids.kemkes.go.id/allergy/100028172",
+      "use": "official",
+      "value": "ALG001"
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+        "code": "active",
+        "display": "Active"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+        "code": "confirmed",
+        "display": "Confirmed"
+      }
+    ]
+  },
+  "category": [
+    "medication"
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "294954003",
+        "display": "Drug allergy"
+      }
+    ],
+    "text": "Alergi obat DEMACOLIN"
+  },
+  "patient": {
+    "reference": "Patient/P00611973592",
+    "display": "AMAQ WIRNA"
+  },
+  "encounter": {
+    "reference": "Encounter/ccfbf826-f73e-4152-9370-82fe0d414e1b"
+  },
+  "recordedDate": "2026-04-04T08:00:00+08:00",
+  "recorder": {
+    "reference": "Practitioner/10015516333",
+    "display": "I MADE WINDUTAMA"
+  }
+}

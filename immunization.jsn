@@ -1,0 +1,71 @@
+{
+  "resourceType": "Immunization",
+  "status": "completed",
+  "primarySource": true,
+  "vaccineCode": {
+    "coding": [
+      {
+        "system": "http://sys-ids.kemkes.go.id/kfa",
+        "code": "93001189",
+        "display": "Vaksin Hepatitis B"
+      }
+    ]
+  },
+  "patient": {
+    "reference": "Patient/P02547725813",
+    "display": "MARLINA"
+  },
+  "encounter": {
+    "reference": "Encounter/8b39d52a-2409-4622-85fb-696cbf958c17"
+  },
+  "occurrenceDateTime": "2026-04-04T08:00:00+08:00",
+  "recorded": "2026-04-04T08:00:00+08:00",
+
+  "lotNumber": "HB0-20260404",
+  "expirationDate": "2027-04-04",
+
+  "performer": [
+    {
+      "function": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+            "code": "AP",
+            "display": "Administering Provider"
+          }
+        ]
+      },
+      "actor": {
+        "reference": "Practitioner/10005955628",
+        "display": "Heni Sunyoto"
+      }
+    }
+  ],
+
+  "location": {
+    "reference": "Location/7d540a6a-7cf9-4715-9e0b-05c628d34010",
+    "display": "RUANG NIFAS"
+  },
+  "doseQuantity": {
+    "value": 1,
+    "unit": "mL",
+    "system": "http://unitsofmeasure.org",
+    "code": "ml"
+  },
+  "protocolApplied": [
+    {
+      "doseNumberPositiveInt": 1
+    }
+  ],
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.kemkes.go.id/CodeSystem/immunization-reason",
+          "code": "IM-Dasar",
+          "display": "Imunisasi Program Rutin Dasar"
+        }
+      ]
+    }
+  ]
+}

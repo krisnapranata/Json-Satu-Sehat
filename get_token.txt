@@ -1,0 +1,6 @@
+curl --insecure --location \
+  --header 'Content-Type: application/x-www-form-urlencoded' \
+  --data-urlencode 'client_id=<CLIENT_ID> ganti ya' \
+  --data-urlencode 'client_secret=<CLIENT SECRET SATU SEHAT> ganti' \
+  --request POST \
+  'https://api-satusehat.kemkes.go.id/oauth2/v1/accesstoken?grant_type=client_credentials'

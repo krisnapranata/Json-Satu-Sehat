@@ -1,0 +1,35 @@
+{
+  "resourceType": "EpisodeOfCare",
+  "status": "active",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type",
+          "code": "TB-SO",
+          "display": "Tuberkulosis Sensitif Obat"
+        }
+      ]
+    }
+  ],
+  "patient": {
+    "reference": "Patient/P02221956574"
+  },
+  "managingOrganization": {
+    "reference": "Organization/100028172"
+  },
+  "careManager": {
+    "reference": "Practitioner/10015516333"
+  },
+  "period": {
+    "start": "2026-04-03T08:00:00+07:00"
+  },
+  "diagnosis": [
+    {
+      "condition": {
+        "reference": "Condition/8186f5fb-550d-42c7-a0c6-0777c07622c7"
+      },
+      "rank": 1
+    }
+  ]
+}

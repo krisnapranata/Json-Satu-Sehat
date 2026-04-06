@@ -1,0 +1,33 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "status": "completed",
+  "questionnaire": "https://fhir.kemkes.go.id/Questionnaire/Q0002",
+  "subject": {
+    "reference": "Patient/P01802955118"
+  },
+  "encounter": {
+    "reference": "Encounter/00c9ac04-8159-4802-8c55-bb320f264cc8"
+  },
+  "authored": "2026-04-05T06:30:00+07:00",
+  "author": {
+    "reference": "Practitioner/10011792169"
+  },
+  "source": {
+    "reference": "Patient/P01802955118"
+  },
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Status Kesejahteraan",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+            "code": "KPS",
+            "display": "Keluarga Pra Sejahtera (KPS)"
+          }
+        }
+      ]
+    }
+  ]
+}
