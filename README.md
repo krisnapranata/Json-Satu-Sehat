@@ -20,6 +20,6 @@ curl --insecure --location \
 
 
 curl -X POST "https://api-satusehat.kemkes.go.id/fhir-r4/v1/Medication" \
- -H "Authorization: Bearer uqAVNb0IMjIYaAm9dXbRZw3n1GIB" \
+ -H "Authorization: Bearer <acces_token>" \
  -H "Content-Type: application/json" \
  -d @medication.json
