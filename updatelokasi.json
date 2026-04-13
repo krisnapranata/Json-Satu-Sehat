@@ -1,0 +1,25 @@
+{
+  "resourceType": "Location",
+  "id": "24fb6e68-cca3-472f-b7dc-f8abb3319117",
+  "status": "active",
+  "name": "Poli Penyakit Dalam",
+  "mode": "instance",
+  "identifier": [
+    {
+      "system": "http://sys-ids.kemkes.go.id/location/100027677",
+      "value": "U0003"
+    }
+  ],
+  "managingOrganization": {
+    "reference": "Organization/100027677"
+  },
+  "physicalType": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+        "code": "ro",
+        "display": "Room"
+      }
+    ]
+  }
+}
