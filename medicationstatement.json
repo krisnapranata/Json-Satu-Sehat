@@ -1,0 +1,128 @@
+{
+  "resourceType": "MedicationStatement",
+  "status": "completed",
+  "category": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+        "code": "community",
+        "display": "Community"
+      }
+    ]
+  },
+  "contained": [
+    {
+      "resourceType": "Medication",
+      "id": "02f87460-2da2-4442-9a03-c2a2f989ba7e",
+      "meta": {
+        "profile": [
+          "https://fhir.kemkes.go.id/r4/StructureDefinition/Medication"
+        ]
+      },
+      "identifier": [
+        {
+          "system": "http://sys-ids.kemkes.go.id/medication/100027677",
+          "use": "official",
+          "value": "02f87460-2da2-4442-9a03-c2a2f989ba7e"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://sys-ids.kemkes.go.id/kfa",
+            "code": "93000666",
+            "display": "Cefixime 100 mg Capsule"
+          }
+        ]
+      },
+      "status": "active",
+      "form": {
+        "coding": [
+          {
+            "system": "http://terminology.kemkes.go.id/CodeSystem/medication-form",
+            "code": "BS002",
+            "display": "Capsule"
+          }
+        ]
+      },
+      "extension": [
+        {
+          "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/MedicationType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://terminology.kemkes.go.id/CodeSystem/medication-type",
+                "code": "NC",
+                "display": "Non-compound"
+              }
+            ]
+          }
+        }
+      ],
+      "ingredient": [
+        {
+          "isActive": true,
+          "itemCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://sys-ids.kemkes.go.id/kfa",
+                "code": "93000666",
+                "display": "Cefixime"
+              }
+            ]
+          },
+          "strength": {
+            "numerator": {
+              "value": 100,
+              "unit": "mg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg"
+            },
+            "denominator": {
+              "value": 1,
+              "unit": "Capsule",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm",
+              "code": "CAP"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/P02045645369"
+  },
+  "context": {
+    "reference": "Encounter/a0986cef-112f-4dad-99f5-0b094610637c"
+  },
+  "effectiveDateTime": "2026-04-08T00:00:00+08:00",
+  "dateAsserted": "2026-04-08T00:00:00+08:00",
+  "informationSource": {
+    "reference": "Patient/P02045645369",
+    "display": "Pasien"
+  },
+  "medicationReference": {
+    "reference": "#02f87460-2da2-4442-9a03-c2a2f989ba7e",
+    "display": "Cefixime 100 mg Capsule"
+  },
+  "dosage": [
+    {
+      "text": "Cefixime 100 mg diminum 3x sehari",
+      "timing": {
+        "repeat": {
+          "frequency": 3,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      }
+    }
+  ],
+  "derivedFrom": [
+    {
+      "reference": "MedicationRequest/932ccd14-0d5d-4823-b3a8-562531ca43ae"
+    },
+    {
+      "reference": "MedicationDispense/6ad0ebf2-d72e-4580-ab1c-a8384378a6c3"
+    }
+  ]
+}

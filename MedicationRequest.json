@@ -1,0 +1,87 @@
+{
+  "resourceType": "MedicationRequest",
+  "identifier": [
+    {
+      "system": "http://sys-ids.kemkes.go.id/prescription/100027677",
+      "use": "official",
+      "value": "202604060042"
+    },
+    {
+      "system": "http://sys-ids.kemkes.go.id/prescription-item/100027677",
+      "use": "official",
+      "value": "FBIO1462"
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+          "code": "outpatient",
+          "display": "Outpatient"
+        }
+      ]
+    }
+  ],
+  "medicationReference": {
+    "reference": "Medication/06edc6ec-a8a7-4e9f-9175-7392f527d5ad",
+    "display": "Paracetamol 500 mg Tablet"
+  },
+  "subject": {
+    "reference": "Patient/P00508442419",
+    "display": "POERNOMO HAMIE SENO"
+  },
+  "encounter": {
+    "reference": "Encounter/0118ba43-af4b-442f-ac0b-ca4f51bb3ea6"
+  },
+  "authoredOn": "2026-04-06T15:14:09+07:00",
+  "requester": {
+    "reference": "Practitioner/10008147580",
+    "display": "RAHMAT SAFRIANSYAH"
+  },
+  "dosageInstruction": [
+    {
+      "sequence": 1,
+      "patientInstruction": "3x1",
+      "timing": {
+        "repeat": {
+          "frequency": 3,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
+      "route": {
+        "coding": [
+          {
+            "system": "http://www.whocc.no/atc",
+      	    "code": "O",
+            "display": "Oral"
+          }
+        ]
+      },
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 1,
+            "unit": "TAB",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm",
+            "code": "TAB"
+          }
+        }
+      ]
+    }
+  ],
+  "dispenseRequest": {
+    "quantity": {
+      "value": 10,
+      "unit": "TAB",
+      "system": "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm",
+      "code": "TAB"
+    },
+    "performer": {
+      "reference": "Organization/100027677"
+    }
+  }
+}
