@@ -1,0 +1,63 @@
+{
+    "resourceType": "Composition",
+    "status": "final",
+    "type": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "18842-5",
+          "display": "Discharge summary"
+        }
+      ]
+    },
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "LP173421-1",
+            "display": "Report"
+          }
+        ]
+      }
+    ],
+    "subject": {
+      "reference": "Patient/P02489656304",
+      "display": "YULIANDA SAFIRA"
+    },
+    "encounter": {
+      "reference": "Encounter/01120231-bb1c-419a-a71b-37c93593935d"
+    },
+    "date": "2026-04-09T13:18:19+07:00",
+    "author": [
+      {
+        "reference": "Practitioner/10008147580",
+        "display": "dr. Rahmat Safriansyah"
+      }
+    ],
+    "title": "Resume Medis Rawat Inap",
+    "custodian": {
+      "reference": "Organization/100027677"
+    },
+    "identifier": {
+      "system": "http://sys-ids.kemkes.go.id/composition/100027677",
+      "value": "2026/04/06/000292-COMPOSITION"
+    },
+    "section": [
+      {
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "42344-2",
+              "display": "Discharge diet"
+            }
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "Diagnosis medis: Susp. demam typhoid + oral candidiasis + BBPV + dispepsia.\n\nAntropometri: BB 50 kg, TB estimasi 151.8 cm, IMT 21.73 (normal).\n\nBiokimia: PLT 131, Salmonella typhi O 1/320, paratyphi A/B.\n\nFisik klinis: Gatal (+), nyeri saat menelan, BAB cair 1x.\n\nDiet: Diet rendah serat, bubur saring, 3x makan utama + 2x selingan.\n\nKebutuhan energi: 1806 kkal, protein 67.72 g.\n\nEvaluasi: Asupan makan 80%, kondisi membaik."
+        }
+      }
+    ]
+  }
