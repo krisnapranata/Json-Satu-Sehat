@@ -1,0 +1,29 @@
+{
+    "resourceType": "ImagingStudy",
+    "status": "available",
+    "subject": {
+      "reference": "Patient/P02059863646"
+    },
+    "encounter": {
+      "reference": "Encounter/13dabbfc-5964-4f39-b5a9-6aee6c1ee09c"
+    },
+    "basedOn": [
+      {
+        "reference": "ServiceRequest/9052ae98-277e-4cd8-a7c3-f829aff21602"
+      }
+    ],
+    "started": "2026-04-12T14:54:27+08:00",
+    "modality": [
+      {
+        "system": "http://dicom.nema.org/resources/ontology/DCM",
+        "code": "CR"
+      }
+    ],
+    "numberOfInstances": 1,
+    "identifier": [
+      {
+        "system": "urn:dicom:uid",
+        "value": "1.2.840.113564.200.217.210.53.124.20.20260401150601178.11050"
+      }
+    ]
+  }
