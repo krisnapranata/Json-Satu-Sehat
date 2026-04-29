@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  dicom:
+    image: registry.dto.kemkes.go.id/pub/dicom-router:latest
+    container_name: dicom-router-jan2026
+    restart: always
+    ports:
+      - "11112:11112"
+      - "8800:8080"
+    environment:
+      - AE_TITLE=DCMROUTER
+      - ORG_ID=100028172
+      - CLIENT=L2ZPNMXLQBtEOSE
+      - SECRET=prMe1Vdebkjv2gHDIh
+      - WEBHOOK_URL=http://api.faskes.com
+      - WEBHOOK_USER=user
+      - WEBHOOK_PASSWORD=123456
+      - URL=https://api-satusehat.kemkes.go.id
+    networks:
+      - dicom-network
+
+  orthanc:
+    image: jodogne/orthanc-plugins
+    container_name: orthanc
+    restart: always
+    ports:
+      - "8042:8042"
+      - "4242:4242"
+    volumes:
+      - ./orthanc.json:/etc/orthanc/orthanc.json
+      - ./auto-send.lua:/etc/orthanc/auto-send.lua
+      - orthanc-storage:/var/lib/orthanc/db
+    networks:
+      - dicom-network
+
+volumes:
+  orthanc-storage:
+
+networks:
+  dicom-network:
+    driver: bridge
